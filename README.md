@@ -18,7 +18,7 @@ bibliography: references.bib
 
 **Lectures:** Sat 11.00am-1.00pm in Meade Room, weeks 1-9  \
 **Classes:** (some) Fri 3.00-5.00pm/5.00-7.00pm in Room 7 (Lecture Block), weeks 3, 5, 7, and 9.  \
-**Teaching Assistant:** Vahan Geghamyan 
+**Teaching Assistant:** Vahan Geghamyan (vg400@cam.ac.uk) 
 
 **Course Website:** <https://github.com/MLecon/ML-in-Economics> \
 **Assignment Submission:** [Github Classroom](https://classroom.github.com/classrooms/195107486-machine-learning-in-economics-2026)\
@@ -105,7 +105,7 @@ Linear Algebra, calculus, probability theory and statistics, as well as programm
 -   Loss functions [@prince2023, Chapter 5]
 -   Regularization: Explicit and implicit regularization, dropout, ensemble methods, transfer learning [@prince2023, Chapter 9]
 
-::: {.content-hidden}
+<!--
 #### Topics Not Currently Covered
 
 -   Support Vector Machines (SVM)
@@ -113,7 +113,7 @@ Linear Algebra, calculus, probability theory and statistics, as well as programm
 -   Ensemble Methods: Boosting and bagging, random forests, gradient boosting machines
 -   Kernel ridge regression
 -   Gaussian Process Models
-:::
+-->
 
 
 ### Artificial Neural Networks and Deep Learning - Week 4 (14 February 2026)
@@ -131,13 +131,13 @@ Linear Algebra, calculus, probability theory and statistics, as well as programm
 -   Large Language Models
 -   Post-training: Finetuning and adaptation (e.g., QLoRA)
 
-::: {.content-hidden}
+<!--
 #### Topics Not Currently Covered
 
 -   Sequence and time series modeling: Recurrent neural networks (RNN), Hopfield network, LSTM
 -   Word embedding (e.g., Word2Vec)
 -   Graph Neural Networks (GNN)
-:::
+-->
 
 
 ## Part 2: Unsupervised Machine Learning
@@ -149,7 +149,7 @@ Linear Algebra, calculus, probability theory and statistics, as well as programm
 -   Variational Autoencoders (VAE) [@prince2023, Chapter 17]
 -   Diffusion Models [@prince2023, Chapter 18]
 
-::: {.content-hidden}
+<!--
 #### Topics Not Currently Covered
 
 - Unsupervised Learning: 
@@ -157,7 +157,7 @@ Linear Algebra, calculus, probability theory and statistics, as well as programm
   - Clustering (K-means)
   - Dimensionality reduction (PCA, ICA)
 -   Generative Adversarial Networks (GANs) [@prince2023, Chapter 15]
-:::
+-->
 
 
 ## Part 3: Reinforcement Learning
@@ -169,7 +169,7 @@ Linear Algebra, calculus, probability theory and statistics, as well as programm
 -   Q-Learning and Deep Q-Networks
 -   Proximal Policy Optimization (PPO)
 
-::: {.content-hidden}
+<!--
 #### Topics Not Currently Covered
 
 -   Hidden Markov Models (HMM)
@@ -178,7 +178,7 @@ Linear Algebra, calculus, probability theory and statistics, as well as programm
 -   @silver2016
 -   @schrittwieser2020
 -   Inverse Reinforcement Learning
-:::
+-->
 
 
 ## Part 4: ML and Economics
@@ -194,12 +194,12 @@ Linear Algebra, calculus, probability theory and statistics, as well as programm
 -   Prediction vs. estimation/inference [@athey2019]
 -   Applications of ML in economics
 
-::: {.content-hidden}
+<!--
 #### Topics Not Currently Covered
 
 -   Brief remarks on causal inference (separate module)
 -   Matrix completion problem: Consumer choice modeling and application to recommender systems
-:::
+-->
 
 
 
