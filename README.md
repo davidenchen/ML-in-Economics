@@ -6,7 +6,7 @@ format:
   pdf: 
     cite-method: natbib
   html: default
-bibliography: references.bib
+bibliography: auxiliary/references.bib
 ---
 
 **University of Cambridge** **Faculty of Economics**
@@ -22,7 +22,7 @@ bibliography: references.bib
 
 **Course Website:** <https://github.com/MLecon/ML-in-Economics> \
 **Assignment Submission:** [Github Classroom](https://classroom.github.com/classrooms/195107486-machine-learning-in-economics-2026)\
-**Readings:** [Zotero Group Library](https://www.zotero.org/groups/ml_econ)\
+**Readings of further interest:** [Zotero Group Library](https://www.zotero.org/groups/ml_econ)\
 **Recordings of further interest:** [Youtube Playlist](https://youtube.com/playlist?list=PLo8op7DIq2yhVzg8sUVAc36PRDZVOw6GD&si=ZV1YOyqJCbzlFdF9)
 
 # Course Overview
