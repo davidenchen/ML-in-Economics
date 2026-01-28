@@ -119,7 +119,7 @@ Linear Algebra, calculus, probability theory and statistics, as well as programm
 -->
 
 
-## Part 2: Deep Learning 
+## Part 2: Deep Learning, Representation Learning, and Generative AI 
 
 ### Artificial Neural Networks: Shallow to Deep - Week 4 (14 February 2026)
 
