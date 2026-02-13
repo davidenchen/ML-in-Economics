@@ -308,13 +308,25 @@ g[\phi] = \sum_j |\phi_j|
 <h2>CART: Classification and Regression Trees</h2>
 <p>Cf. D300 &amp; <span class="citation" data-cites="murphy2022">Murphy (<a href="" role="doc-biblioref" onclick="return false;">2022, chap. 18.1</a>)</span>.</p>
 <ul>
-<li class="fragment">Recursive axis-parallel splits: choose feature + threshold to minimize impurity</li>
+<li class="fragment">Recursive axis-parallel splits: choose feature + threshold to minimize impurity
+<ul>
 <li class="fragment">regression: MSE</li>
-<li class="fragment">classification: entropy or Gini</li>
+<li class="fragment">classification: entropy or Gini index</li>
+</ul></li>
 <li class="fragment">Partitions input space into (axis-aligned) regions of constant prediction.</li>
 </ul>
-
-<img data-src="3_regularizationAndEnsembles_files/figure-revealjs/cell-2-output-1.png" class="quarto-figure quarto-figure-center r-stretch"><p>Adapted from <span class="citation" data-cites="murphy2022">Murphy (<a href="" role="doc-biblioref" onclick="return false;">2022, fig. 18.1</a>)</span>.</p>
+<div class="fragment">
+<div id="8e56366b" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="3_regularizationAndEnsembles_files/figure-revealjs/cell-2-output-1.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Adapted from <span class="citation" data-cites="murphy2022">Murphy (<a href="" role="doc-biblioref" onclick="return false;">2022, fig. 18.1</a>)</span>.</p>
+</div>
 </section>
 <section id="bagging-bootstrap-aggregating" class="slide level2">
 <h2>Bagging: Bootstrap aggregating</h2>
@@ -323,8 +335,18 @@ g[\phi] = \sum_j |\phi_j|
 <li class="fragment"><strong>Bootstrap aggregating:</strong> fit many models in parallel on bootstrap samples of the training data; average their predictions.</li>
 <li class="fragment">Averaging (or voting) reduces variance.</li>
 </ul>
-
-<img data-src="3_regularizationAndEnsembles_files/figure-revealjs/cell-3-output-1.png" class="quarto-figure quarto-figure-center r-stretch"><p>Adapted from <span class="citation" data-cites="murphy2022">Murphy (<a href="" role="doc-biblioref" onclick="return false;">2022, fig. 18.4</a>)</span>.</p>
+<div class="fragment">
+<div id="fd26e91b" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="3_regularizationAndEnsembles_files/figure-revealjs/cell-3-output-1.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Adapted from <span class="citation" data-cites="murphy2022">Murphy (<a href="" role="doc-biblioref" onclick="return false;">2022, fig. 18.4</a>)</span>.</p>
+</div>
 </section>
 <section id="random-forests" class="slide level2">
 <h2>Random forests</h2>
@@ -332,14 +354,34 @@ g[\phi] = \sum_j |\phi_j|
 <li class="fragment">Bagging but at each split use a random subset of features.</li>
 <li class="fragment">Further decorrelates trees.</li>
 </ul>
-
-<img data-src="3_regularizationAndEnsembles_files/figure-revealjs/cell-4-output-1.png" class="quarto-figure quarto-figure-center r-stretch"><p>Adapted from <span class="citation" data-cites="murphy2022">Murphy (<a href="" role="doc-biblioref" onclick="return false;">2022, fig. 18.4</a>)</span>.</p>
+<div class="fragment">
+<div id="c9d9b2da" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="3_regularizationAndEnsembles_files/figure-revealjs/cell-4-output-1.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Adapted from <span class="citation" data-cites="murphy2022">Murphy (<a href="" role="doc-biblioref" onclick="return false;">2022, fig. 18.4</a>)</span>.</p>
+</div>
 </section>
 <section id="boosting" class="slide level2">
 <h2>Boosting</h2>
 <p>Sequential: each new model focuses on errors (residuals) of the previous ones to iteratively improve weak learners.</p>
-
-<img data-src="3_regularizationAndEnsembles_files/figure-revealjs/cell-5-output-1.png" class="quarto-figure quarto-figure-center r-stretch"><p>Adapted from <span class="citation" data-cites="murphy2022">Murphy (<a href="" role="doc-biblioref" onclick="return false;">2022, fig. 18.6</a>)</span>.</p>
+<div class="fragment">
+<div id="2076202b" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="3_regularizationAndEnsembles_files/figure-revealjs/cell-5-output-1.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Adapted from <span class="citation" data-cites="murphy2022">Murphy (<a href="" role="doc-biblioref" onclick="return false;">2022, fig. 18.6</a>)</span>.</p>
+</div>
 </section>
 <section id="gradient-boosting-and-xgboost" class="slide level2">
 <h2>Gradient Boosting and XGBoost</h2>
@@ -380,7 +422,7 @@ g[\phi] = \sum_j |\phi_j|
 <li class="fragment">Uniquely satisfies efficiency, symmetry, and consistency.</li>
 </ul>
 <div class="fragment">
-<div id="7fd54b1e" class="cell" data-execution_count="5">
+<div id="40b20c78" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
