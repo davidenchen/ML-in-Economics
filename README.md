@@ -123,9 +123,11 @@ Linear Algebra, calculus, probability theory and statistics, as well as programm
 ### Trees, Forests, Boosting, and Regularization - Week 3 (7 February 2026)
 
 -   Regularization: Explicit and implicit regularization, dropout, transfer learning [@prince2023, Chapter 9]
--   CART (Classification and Regression Trees) and ensemble methods: bagging (random forests), gradient boosting (XGBoost) [@murphy2022, Chapter 18]
+-   Nonparametric methods: CART (Classification and Regression Trees) 
+-   Ensemble methods: bagging (random forests), gradient boosting (XGBoost) [@murphy2022, Chapter 18]
 -   Model interpretability: Shapley values and SHAP for feature attribution
--   Prediction vs. inference: causal ML topics (e.g., DML, causal forests) are covered in D300 
+-   Prediction vs. inference
+  - causal ML topics (e.g., Double/Debiased Machine Learning, causal forests) are covered in D300 
 -   Introduction to Research Project  
 
 

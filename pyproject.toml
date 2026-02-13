@@ -22,6 +22,8 @@ dependencies = [
 
     # Traditional ML
     "scikit-learn",
+    "xgboost",
+    "shap",
 
     # Econometrics
     "statsmodels",
