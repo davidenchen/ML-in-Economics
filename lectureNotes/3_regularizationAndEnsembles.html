@@ -316,7 +316,7 @@ g[\phi] = \sum_j |\phi_j|
 <li class="fragment">Partitions input space into (axis-aligned) regions of constant prediction.</li>
 </ul>
 <div class="fragment">
-<div id="8e56366b" class="cell" data-execution_count="1">
+<div id="2486a6fc" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -336,7 +336,7 @@ g[\phi] = \sum_j |\phi_j|
 <li class="fragment">Averaging (or voting) reduces variance.</li>
 </ul>
 <div class="fragment">
-<div id="fd26e91b" class="cell" data-execution_count="2">
+<div id="9469e63b" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -355,7 +355,7 @@ g[\phi] = \sum_j |\phi_j|
 <li class="fragment">Further decorrelates trees.</li>
 </ul>
 <div class="fragment">
-<div id="c9d9b2da" class="cell" data-execution_count="3">
+<div id="1eb612b2" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -371,7 +371,7 @@ g[\phi] = \sum_j |\phi_j|
 <h2>Boosting</h2>
 <p>Sequential: each new model focuses on errors (residuals) of the previous ones to iteratively improve weak learners.</p>
 <div class="fragment">
-<div id="2076202b" class="cell" data-execution_count="4">
+<div id="0dfcf19b" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -401,38 +401,41 @@ g[\phi] = \sum_j |\phi_j|
 <h1>Model interpretability</h1>
 
 </section>
-<section id="feature-attribution" class="slide level2">
-<h2>Feature attribution</h2>
-<p><strong>Question:</strong><br>
-&gt; <em>Which input features contributed to this model prediction?</em></p>
-<p><strong>Core idea</strong> - Decompose a prediction into <strong>additive feature contributions</strong> - Explain the <strong>model’s behavior</strong>, not the data-generating process</p>
-<p><strong>Typical output</strong> - Baseline prediction<br>
-- + contribution of feature 1<br>
-- + contribution of feature 2<br>
-- … = final prediction</p>
-<p><strong>What it is good for</strong> - Debugging models<br>
-- Auditing decisions<br>
-- Communicating model logic at a high level</p>
-</section>
-<section id="shapley-values-and-shap" class="slide level2">
-<h2>Shapley Values and SHAP</h2>
+<section id="feature-attribution-shapley-values" class="slide level2">
+<h2>Feature attribution: Shapley values</h2>
+<p><em>Which input features contribute to model prediction?</em></p>
 <ul>
-<li class="fragment"><strong>Shapley value:</strong> feature <span class="math inline">\(j\)</span>’s average marginal contribution over all feature subsets (cooperative game theory)</li>
-<li class="fragment"><strong>SHAP:</strong> efficient approximation; treats features as players, prediction as payoff.</li>
-<li class="fragment">Uniquely satisfies efficiency, symmetry, and consistency.</li>
+<li class="fragment">Write prediction = baseline + sum of <strong>additive feature contributions</strong>:</li>
 </ul>
 <div class="fragment">
-<div id="40b20c78" class="cell" data-execution_count="5">
-<div class="cell-output cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="3_regularizationAndEnsembles_files/figure-revealjs/cell-6-output-1.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
+<div style="font-size: 0.92em;">
+<p><span class="math display">\[
+\hat y(x)
+=
+\mathbb{E}[\hat y(X)]
++
+\sum_{f=1}^{D}
+\sum_{S \subseteq F \setminus \{f\}}
+\frac{|S|!\,(D-|S|-1)!}{D!}
+\Big(
+f_x(S \cup \{f\}) - f_x(S)
+\Big)
+\]</span></p>
 </div>
-</div>
-</div>
+<ul>
+<li class="fragment"><strong>Shapley value:</strong> <span class="math inline">\(f\)</span>’s average marginal contribution over all subsets <span class="math inline">\(S\)</span> of other features.
+<ul>
+<li class="fragment"><strong>Fair attribution</strong> (cooperative game theory): unique rule satisfying <em>efficiency</em>, <em>symmetry</em>, and <em>consistency</em></li>
+<li class="fragment">features = players, prediction = payoff</li>
+</ul></li>
+<li class="fragment"><strong>SHAP:</strong> practical method to approximate these values.</li>
+</ul>
 </div>
 </section>
+<section id="shapley-values" class="slide level2">
+<h2>Shapley values</h2>
+
+<img data-src="3_regularizationAndEnsembles_files/figure-revealjs/cell-6-output-1.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 </section>
 
     </div>
